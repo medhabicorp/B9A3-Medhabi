@@ -37,8 +37,9 @@
 </head>
 
 <body class="my-2 mx-2 lg:my-14 lg:mx-32 font-manrope">
-    <header class="lg:container lg:mx-auto">
-        <nav class="mb-12">
+    <header class="container mx-auto w-full">
+        <!-- navbar section   -->
+      <nav class="mb-12">
             <div class="navbar bg-white py-0 px-0">
                 <div class="navbar-start ">
                   <div class="dropdown">
@@ -82,7 +83,8 @@
               </div>
         </nav>
         <!-- carousel sections -->
-        <div class="carousel w-full">
+        <div class="flex flex-col gap-4">
+        <div class="carousel w-full z-0 lg:relative">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./images/1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-5 gap-5">
@@ -98,6 +100,13 @@
               </div>
             </div> 
           </div>
+          <div class="z-10 lg:absolute -bottom-4 right-48 opacity-80">
+          <div class="p-8 bg-[#131318] flex flex-col gap-4 max-w-xl rounded-2xl">
+            <h3 class="text-white text-2xl">Meet all the experienced.</h3>
+            <p class="text-[#FFFFFF99] text-base">Meet all the experienced players from all over the world and have a great experience playing with them</p>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
 
